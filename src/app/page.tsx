@@ -3,8 +3,9 @@
 export default function HomePage() {
   return (
     <main>
-      <section className="w-full bg-cx-navy text-white">
-        <div className="max-w-5xl mx-auto px-6 py-20">
+      <section className="relative w-full bg-cx-navy text-white overflow-hidden">
+        <img src="/hero-overlay.svg" alt="" aria-hidden className="pointer-events-none select-none absolute inset-0 h-full w-full object-cover opacity-40" />
+        <div className="relative max-w-5xl mx-auto px-6 py-20">
           <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
           <p className="mt-6 max-w-2xl text-cx-gray-300">What Happened. What It Means. What To Do.</p>
