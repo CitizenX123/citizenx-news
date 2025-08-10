@@ -5,7 +5,7 @@ export default function HomePage() {
     <main>
       <section className="relative w-full bg-cx-navy text-white overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1800&q=60"
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=60"
           alt=""
           aria-hidden
           className="pointer-events-none select-none absolute inset-0 h-full w-full object-cover opacity-35 grayscale"
