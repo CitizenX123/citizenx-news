@@ -21,7 +21,7 @@ export default function HomePage() {
           aria-hidden
           className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right grayscale ${localLoaded ? 'opacity-0' : 'opacity-70'}`}
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/90 via-cx-navy/55 to-cx-navy/0" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/95 via-cx-navy/75 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-28">
           <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
