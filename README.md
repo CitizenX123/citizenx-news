@@ -1,6 +1,8 @@
 # Citizen X News
 
-From policy to paycheck. Plain-language news, alerts, and history context.
+Understand today. Act tomorrow.
+
+What happened. What it means. What to do.
 
 - Dev: npm run dev (http://localhost:4100)
 - Build: npm run build

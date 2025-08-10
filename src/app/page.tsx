@@ -7,11 +7,10 @@ export default function HomePage() {
             Citizen X News
           </h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">
-            From policy to paycheck
+            Understand today. Act tomorrow.
           </p>
           <p className="mt-6 max-w-2xl text-cx-gray-300">
-            Plain talk, real stakes. Clear updates on how today’s decisions
-            affect rent, wages, benefits, and rights — with a history lens.
+            What happened. What it means. What to do.
           </p>
         </div>
       </section>
