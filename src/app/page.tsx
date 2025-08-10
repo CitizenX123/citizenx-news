@@ -4,7 +4,13 @@ export default function HomePage() {
   return (
     <main>
       <section className="relative w-full bg-cx-navy text-white overflow-hidden">
-        <img src="/hero-people.svg" alt="" aria-hidden className="pointer-events-none select-none absolute inset-0 h-full w-full object-cover opacity-85" />
+        <img
+          src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1800&q=60"
+          alt=""
+          aria-hidden
+          className="pointer-events-none select-none absolute inset-0 h-full w-full object-cover opacity-35 grayscale"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-cx-navy/95 via-cx-navy/80 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-20">
           <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
