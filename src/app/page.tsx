@@ -1,14 +1,25 @@
 "use client";
+import { useState } from 'react';
 
 export default function HomePage() {
+  const [localLoaded, setLocalLoaded] = useState(false);
   return (
     <main>
       <section className="relative w-full bg-cx-navy text-white overflow-hidden">
+        {/* Local upload (put hero.jpg in /public). Only shows if it loads. */}
+        <img
+          src="/hero.jpg"
+          alt=""
+          aria-hidden
+          onLoad={() => setLocalLoaded(true)}
+          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right grayscale transition-opacity duration-300 ${localLoaded ? 'opacity-80' : 'opacity-0'}`}
+        />
+        {/* Fallback external photo if no local upload present */}
         <img
           src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=2400&q=70&sat=-100"
           alt=""
           aria-hidden
-          className="pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right opacity-80 grayscale"
+          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right grayscale ${localLoaded ? 'opacity-0' : 'opacity-80'}`}
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-cx-navy/85 via-cx-navy/35 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-28">
