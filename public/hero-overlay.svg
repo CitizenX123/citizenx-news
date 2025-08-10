@@ -2,16 +2,16 @@
   <defs>
     <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0%" stop-color="#0B1F3B" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#0B1F3B" stop-opacity="0.2"/>
-      <stop offset="85%" stop-color="#0B1F3B" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#0B1F3B" stop-opacity="0.35"/>
+      <stop offset="85%" stop-color="#0B1F3B" stop-opacity="1"/>
     </linearGradient>
   </defs>
   <rect width="900" height="600" fill="url(#fade)"/>
   <!-- Subtle silhouettes (abstract, low opacity) -->
-  <g fill="#FFFFFF" fill-opacity="0.08">
+  <g fill="#FFFFFF" fill-opacity="0.16">
     <path d="M720 520c0-70 40-120 90-120s90 50 90 120v80H720v-80z"/>
-    <path d="M560 540c0-60 36-100 80-100s80 40 80 100v60H560v-60z"/>
-    <path d="M420 560c0-50 32-84 70-84s70 34 70 84v40H420v-40z"/>
+    <path d="M540 540c0-60 46-110 100-110s100 50 100 110v60H540v-60z"/>
+    <path d="M360 560c0-54 40-94 88-94s88 40 88 94v40H360v-40z"/>
     <!-- Raised arms (abstract shapes) -->
     <path d="M770 360c12-22 30-36 46-36 10 0 20 4 28 10l-10 18c-6-4-12-6-18-6-10 0-22 10-30 28l-16-14z"/>
     <path d="M620 380c10-20 26-30 40-30 8 0 16 3 24 8l-10 18c-5-3-10-4-14-4-8 0-18 8-26 22l-14-14z"/>
