@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Citizen X News — From policy to paycheck',
-  description: 'Plain-language news, alerts, and history context for everyday people. What power does, what it means for you.',
+  title: 'Citizen X News — Understand today. Act tomorrow.',
+  description: 'What happened. What it means. What to do.',
   openGraph: {
-    title: 'Citizen X News',
-    description: 'From policy to paycheck',
+    title: 'Citizen X News — Understand today. Act tomorrow.',
+    description: 'What happened. What it means. What to do.',
     type: 'website',
     url: 'https://citizenx.life',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Citizen X News — From policy to paycheck',
-    description: 'Plain-language news, alerts, and history context for everyday people.',
+    title: 'Citizen X News — Understand today. Act tomorrow.',
+    description: 'What happened. What it means. What to do.',
   },
   metadataBase: new URL('https://citizenx.life'),
 };
