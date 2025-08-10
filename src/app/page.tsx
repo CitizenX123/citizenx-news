@@ -19,9 +19,9 @@ export default function HomePage() {
           src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=2400&q=70&sat=-100"
           alt=""
           aria-hidden
-          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right grayscale ${localLoaded ? 'opacity-0' : 'opacity-80'}`}
+          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-right grayscale ${localLoaded ? 'opacity-0' : 'opacity-70'}`}
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-cx-navy/85 via-cx-navy/35 to-cx-navy/0" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/90 via-cx-navy/55 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-28">
           <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
