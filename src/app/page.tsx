@@ -1,3 +1,5 @@
+"use client";
+
 export default function HomePage() {
   return (
     <main>
@@ -37,7 +39,14 @@ export default function HomePage() {
           <div className="border border-cx-gray-300 rounded-lg p-6 md:col-span-3">
             <h3 className="text-xl font-semibold">Get alerts</h3>
             <p className="mt-2 text-sm text-cx-gray-700">Be first to know when something changes where you live.</p>
-            <form className="mt-4 flex flex-col sm:flex-row gap-3" action="#" onSubmit={(e) => e.preventDefault()}>
+            <form
+              className="mt-4 flex flex-col sm:flex-row gap-3"
+              action="#"
+              onSubmit={(e) => {
+                e.preventDefault();
+                alert('Thanks! Alerts coming soon.');
+              }}
+            >
               <input className="w-full sm:w-auto flex-1 rounded-md border border-cx-gray-300 px-3 py-2" placeholder="Email address" type="email" required />
               <button className="rounded-md bg-cx-navy text-white px-4 py-2" type="submit">Notify me</button>
             </form>
