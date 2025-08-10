@@ -5,14 +5,9 @@ export default function HomePage() {
     <main>
       <section className="w-full bg-cx-navy text-white">
         <div className="max-w-5xl mx-auto px-6 py-20">
-          <img src="/logo-citizenx.svg" alt="Citizen X News" className="h-16 md:h-20 mb-4" />
-          <h1 className="sr-only">Citizen X News</h1>
-          <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">
-            Understand today. Act tomorrow.
-          </p>
-          <p className="mt-6 max-w-2xl text-cx-gray-300">
-            What happened. What it means. What to do.
-          </p>
+          <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
+          <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
+          <p className="mt-6 max-w-2xl text-cx-gray-300">What Happened. What It Means. What To Do.</p>
         </div>
       </section>
 
@@ -37,18 +32,55 @@ export default function HomePage() {
             </p>
           </div>
           <div className="border border-cx-gray-300 rounded-lg p-6 md:col-span-3">
-            <h3 className="text-xl font-semibold">Get alerts</h3>
-            <p className="mt-2 text-sm text-cx-gray-700">Be first to know when something changes where you live.</p>
+            <h3 className="text-xl font-semibold">Get Alerts</h3>
+            <p className="mt-2 text-sm text-cx-gray-700">Be the first to know when something changes where you live.</p>
             <form
               className="mt-4 flex flex-col sm:flex-row gap-3"
               action="#"
               onSubmit={(e) => {
                 e.preventDefault();
-                alert('Thanks! Alerts coming soon.');
+                const form = e.currentTarget as HTMLFormElement;
+                const data = new FormData(form);
+                const email = String(data.get('email') || '');
+                const zip = String(data.get('zip') || '');
+                const topics = data.getAll('topics');
+                alert(`Thanks! We'll tailor alerts for ${zip || 'your area'} on: ${topics.join(', ') || 'general updates'}.`);
               }}
             >
-              <input className="w-full sm:w-auto flex-1 rounded-md border border-cx-gray-300 px-3 py-2" placeholder="Email address" type="email" required />
-              <button className="rounded-md bg-cx-navy text-white px-4 py-2" type="submit">Notify me</button>
+              <input
+                name="email"
+                className="w-full sm:w-auto flex-1 rounded-md border border-cx-gray-300 px-3 py-2"
+                placeholder="Email address"
+                type="email"
+                required
+                aria-label="Email address"
+              />
+              <input
+                name="zip"
+                className="w-full sm:w-32 rounded-md border border-cx-gray-300 px-3 py-2"
+                placeholder="ZIP code"
+                pattern="\\d{5}"
+                title="5-digit ZIP code"
+                aria-label="ZIP code"
+              />
+              <fieldset className="flex flex-wrap gap-3 text-sm text-cx-gray-700">
+                <label className="inline-flex items-center gap-2">
+                  <input type="checkbox" name="topics" value="Housing" /> Housing
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  <input type="checkbox" name="topics" value="Wages" /> Wages
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  <input type="checkbox" name="topics" value="Healthcare" /> Healthcare
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  <input type="checkbox" name="topics" value="Education" /> Education
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  <input type="checkbox" name="topics" value="Voting" /> Voting
+                </label>
+              </fieldset>
+              <button className="rounded-md bg-cx-navy text-white px-4 py-2" type="submit">Notify Me</button>
             </form>
           </div>
         </div>
