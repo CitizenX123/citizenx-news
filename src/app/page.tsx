@@ -5,24 +5,24 @@ export default function HomePage() {
   const [localLoaded, setLocalLoaded] = useState(false);
   return (
     <main>
-      <section className="relative w-full bg-cx-navy text-white overflow-hidden">
+      <section className="relative w-full bg-cx-navy text-white overflow-hidden min-h-[420px] md:min-h-[520px]">
         {/* Local upload (put hero.png or hero.jpg in /public). PNG preferred. */}
         <img
           src="/hero.png"
           alt=""
           aria-hidden
           onLoad={() => setLocalLoaded(true)}
-          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-bottom grayscale transition-opacity duration-300 ${localLoaded ? 'opacity-80' : 'opacity-0'}`}
+          className={`pointer-events-none select-none absolute bottom-0 left-0 right-0 h-[120%] w-full object-cover object-bottom grayscale transition-opacity duration-300 ${localLoaded ? 'opacity-80' : 'opacity-0'}`}
         />
         {/* Fallback external photo if no local upload present */}
         <img
           src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=2400&q=70&sat=-100"
           alt=""
           aria-hidden
-          className={`pointer-events-none select-none absolute inset-0 h-full w-full object-cover object-bottom grayscale ${localLoaded ? 'opacity-0' : 'opacity-70'}`}
+          className={`pointer-events-none select-none absolute bottom-0 left-0 right-0 h-[120%] w-full object-cover object-bottom grayscale ${localLoaded ? 'opacity-0' : 'opacity-70'}`}
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/80 to-cx-navy/0" />
-        <div className="relative max-w-5xl mx-auto px-6 py-28">
+        <div className="relative max-w-5xl mx-auto px-6 py-40 md:py-44">
           <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
           <p className="mt-6 max-w-2xl text-cx-gray-300">What Happened. What It Means. What To Do.</p>
