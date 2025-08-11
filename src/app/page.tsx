@@ -5,17 +5,17 @@ export default function HomePage() {
   const [localLoaded, setLocalLoaded] = useState(false);
   return (
     <main>
-      <section className="relative w-full bg-cx-navy text-white overflow-hidden min-h-[300px] md:min-h-[360px]">
+      <section className="relative w-full bg-cx-navy text-white overflow-hidden min-h-[240px] md:min-h-[300px]">
         {/* Local upload (put hero.png in /public). */}
         <img
           src="/hero.png"
           alt=""
           aria-hidden
-          className="pointer-events-none select-none absolute bottom-[-25%] left-0 right-0 h-[160%] w-full object-cover object-bottom grayscale opacity-80"
+          className="pointer-events-none select-none absolute bottom-[-50%] left-0 right-0 h-[200%] w-full object-cover object-bottom grayscale opacity-80"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/80 to-cx-navy/0" />
-        <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-20">
-          <h1 className="text-4xl md:text-6xl font-headline tracking-tight">Citizen X News</h1>
+        <div className="relative max-w-5xl mx-auto px-6 py-10 md:py-12">
+          <h1 className="text-3xl md:text-5xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
           <p className="mt-6 max-w-2xl text-cx-gray-300">What Happened. What It Means. What To Do.</p>
         </div>
