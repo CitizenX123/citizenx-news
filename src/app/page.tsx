@@ -6,9 +6,9 @@ export default function HomePage() {
   return (
     <main>
       <section className="relative w-full bg-cx-navy text-white overflow-hidden">
-        {/* Local upload (put hero.jpg in /public). Only shows if it loads. */}
+        {/* Local upload (put hero.png or hero.jpg in /public). PNG preferred. */}
         <img
-          src="/hero.jpg"
+          src="/hero.png"
           alt=""
           aria-hidden
           onLoad={() => setLocalLoaded(true)}
