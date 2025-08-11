@@ -11,9 +11,9 @@ export default function HomePage() {
           src="/hero.png"
           alt=""
           aria-hidden
-          className="pointer-events-none select-none absolute bottom-[-100%] left-0 right-0 h-[200%] w-full object-cover object-bottom grayscale opacity-80"
+          className="pointer-events-none select-none absolute right-0 bottom-0 h-[80%] w-1/2 object-contain grayscale opacity-80"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/80 to-cx-navy/0" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/70 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-10 md:py-12">
           <h1 className="text-3xl md:text-5xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
