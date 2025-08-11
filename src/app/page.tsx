@@ -11,7 +11,7 @@ export default function HomePage() {
           src="/hero.png"
           alt=""
           aria-hidden
-          className="pointer-events-none select-none absolute bottom-[-50%] left-0 right-0 h-[200%] w-full object-cover object-bottom grayscale opacity-80"
+          className="pointer-events-none select-none absolute bottom-[-100%] left-0 right-0 h-[200%] w-full object-cover object-bottom grayscale opacity-80"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/80 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-10 md:py-12">
