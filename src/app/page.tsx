@@ -6,13 +6,7 @@ export default function HomePage() {
   return (
     <main>
       <section className="relative w-full bg-cx-navy text-white overflow-hidden min-h-[240px] md:min-h-[300px]">
-        {/* Local upload (put hero.png in /public). */}
-        <img
-          src="/hero.png"
-          alt=""
-          aria-hidden
-          className="pointer-events-none select-none absolute right-0 bottom-0 h-[100%] w-[91%] object-contain grayscale opacity-80 transform origin-bottom-right scale-[1.4]"
-        />
+        {/* Image removed per request; keeping gradient-only banner. */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-cx-navy/98 via-cx-navy/70 to-cx-navy/0" />
         <div className="relative max-w-5xl mx-auto px-6 py-10 md:py-12">
           <h1 className="text-3xl md:text-5xl font-headline tracking-tight">Citizen X News</h1>
