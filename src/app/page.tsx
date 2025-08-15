@@ -12,6 +12,9 @@ export default function HomePage() {
           <h1 className="text-3xl md:text-5xl font-headline tracking-tight">Citizen X News</h1>
           <p className="mt-4 text-lg md:text-2xl text-cx-gray-300">Understand Today. Act Tomorrow.</p>
           <p className="mt-6 max-w-2xl text-cx-gray-300">What Happened. What It Means. What To Do.</p>
+          <div className="mt-6">
+            <a href="/brief" className="inline-block rounded-md bg-white/10 px-4 py-2 text-white hover:bg-white/20 transition-colors">Read Today’s Brief</a>
+          </div>
         </div>
       </section>
 
@@ -21,9 +24,9 @@ export default function HomePage() {
             <img
               src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1400&q=70&sat=-100"
               alt="Newspaper and notes"
-              className="absolute inset-0 h-full w-full object-cover grayscale opacity-80 group-hover:opacity-90 transition-opacity"
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover grayscale opacity-80 group-hover:opacity-90 transition-opacity"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-cx-navy/80 via-cx-navy/40 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-cx-navy/80 via-cx-navy/40 to-transparent" />
             <div className="relative p-6">
               <h3 className="text-xl font-semibold text-white">Today’s Brief</h3>
               <p className="mt-2 text-sm text-white/90">
