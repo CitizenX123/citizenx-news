@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllBriefs } from '@/src/lib/briefs';
+import { getAllBriefs } from '@/lib/briefs';
 
 export const metadata = {
   title: 'Today\'s Brief — Citizen X News',

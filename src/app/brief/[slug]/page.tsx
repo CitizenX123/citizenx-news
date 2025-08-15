@@ -1,4 +1,4 @@
-import { getAllBriefs, getBrief } from '@/src/lib/briefs';
+import { getAllBriefs, getBrief } from '@/lib/briefs';
 
 export async function generateStaticParams() {
   const briefs = getAllBriefs();
