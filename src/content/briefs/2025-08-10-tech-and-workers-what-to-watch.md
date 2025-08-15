@@ -10,7 +10,7 @@ sources:
 whatHappened: Regulators are pushing on tech fees, lock‑ins, and data abuse. Companies push back. You pay the difference.
 whatItMeans:
   - “Junk fees” are price hikes with better PR. They add up fast on phone, internet, streaming, tickets.
-  - Lock‑ins trap you: harder to leave a service = easier to raise prices later. Workers feel it in scheduling and control.
+  - 'Lock‑ins trap you: harder to leave a service = easier to raise prices later. Workers feel it in scheduling and control.'
 whatToDo: Audit your bills. Cancel what you don’t use. Set reminders before free trials end. Complain in writing—refunds happen when there’s a paper trail.
 ---
 
