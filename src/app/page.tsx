@@ -17,7 +17,7 @@ export default function HomePage() {
 
       <section className="w-full">
         <div className="max-w-5xl mx-auto px-6 py-12 grid gap-6 md:grid-cols-3">
-          <div className="group relative overflow-hidden rounded-lg border border-cx-gray-300">
+          <a href="/brief" className="group relative overflow-hidden rounded-lg border border-cx-gray-300 block">
             <img
               src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1400&q=70&sat=-100"
               alt="Newspaper and notes"
@@ -30,7 +30,7 @@ export default function HomePage() {
                 What happened. What it means. What to do. Fast.
               </p>
             </div>
-          </div>
+          </a>
           <div className="group relative overflow-hidden rounded-lg border border-cx-gray-300">
             <img
               src="https://images.unsplash.com/photo-1457694587812-e8bf29a43845?auto=format&fit=crop&w=1400&q=70&sat=-100"
