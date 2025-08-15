@@ -17,23 +17,47 @@ export default function HomePage() {
 
       <section className="w-full">
         <div className="max-w-5xl mx-auto px-6 py-12 grid gap-6 md:grid-cols-3">
-          <div className="border border-cx-gray-300 rounded-lg p-6">
-            <h3 className="text-xl font-semibold">Today’s Brief</h3>
-            <p className="mt-2 text-sm text-cx-gray-700">
-              Short summaries with sources and what it means for you.
-            </p>
+          <div className="group relative overflow-hidden rounded-lg border border-cx-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1400&q=70&sat=-100"
+              alt="Newspaper and notes"
+              className="absolute inset-0 h-full w-full object-cover grayscale opacity-80 group-hover:opacity-90 transition-opacity"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-cx-navy/80 via-cx-navy/40 to-transparent" />
+            <div className="relative p-6">
+              <h3 className="text-xl font-semibold text-white">Today’s Brief</h3>
+              <p className="mt-2 text-sm text-white/90">
+                What happened. What it means. What to do. Fast.
+              </p>
+            </div>
           </div>
-          <div className="border border-cx-gray-300 rounded-lg p-6">
-            <h3 className="text-xl font-semibold">History Lens</h3>
-            <p className="mt-2 text-sm text-cx-gray-700">
-              Fast context that explains how we got here.
-            </p>
+          <div className="group relative overflow-hidden rounded-lg border border-cx-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1457694587812-e8bf29a43845?auto=format&fit=crop&w=1400&q=70&sat=-100"
+              alt="Library stacks and archives"
+              className="absolute inset-0 h-full w-full object-cover grayscale opacity-80 group-hover:opacity-90 transition-opacity"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-cx-navy/80 via-cx-navy/40 to-transparent" />
+            <div className="relative p-6">
+              <h3 className="text-xl font-semibold text-white">History Lens</h3>
+              <p className="mt-2 text-sm text-white/90">
+                The roots behind today’s news—plain and quick.
+              </p>
+            </div>
           </div>
-          <div className="border border-cx-gray-300 rounded-lg p-6">
-            <h3 className="text-xl font-semibold">Alerts</h3>
-            <p className="mt-2 text-sm text-cx-gray-700">
-              Push/SMS when something local affects your paycheck or rights.
-            </p>
+          <div className="group relative overflow-hidden rounded-lg border border-cx-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=70&sat=-100"
+              alt="Phone notification"
+              className="absolute inset-0 h-full w-full object-cover grayscale opacity-80 group-hover:opacity-90 transition-opacity"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-cx-navy/80 via-cx-navy/40 to-transparent" />
+            <div className="relative p-6">
+              <h3 className="text-xl font-semibold text-white">Alerts</h3>
+              <p className="mt-2 text-sm text-white/90">
+                When rules change or deadlines hit where you live.
+              </p>
+            </div>
           </div>
           <div className="border border-cx-gray-300 rounded-lg p-6 md:col-span-3">
             <h3 className="text-xl font-semibold">Get Alerts</h3>
